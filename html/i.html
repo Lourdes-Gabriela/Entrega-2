@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   
+    <title>SumaDeSueldos</title>
 </head>
 <body>
-    <script src=".js/script.js"></script>
+    <main>
+        <h1>Total de sueldos</h1>
+        <form id="form">
+          <h2>Ingrese los siguientes datos</h2>
+
+          <p>
+            <label for="nombre">Nombre del empleado</label>
+            <input type="text" name="nombreEmpleado" id="nombre" placeholder="Nombre completo" required>
+          </p>
+
+          <p>
+            <label for="valorHora">Valor de horas trabajadas</label>
+            <input type="number" name="valorHora" id="valorHora" required>
+          </p>
+
+          <p>
+            <label for="feriados">Cantidad de feriados trabajados</label>
+            <input type="number" name="feriados" id="feriados" required>
+          </p>
+
+          <button type="submit">Guardar</button>
+        </form>
+        
+        <ul id="empleados" style="margin: 40px;"></ul>
+
+        <button id="botonLimpiar">Limpiar</button>
+
+        <div id="totalSueldos"></div>
+    </main>
+
+
+    <!-- enlace a archivo JS -->
+    <script src="/js/script.js"></script>
 </body>
 </html>
